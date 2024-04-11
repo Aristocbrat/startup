@@ -17,6 +17,8 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+
 .brand-name h1{
     color: #1E0E62;
     font-size: 24px;
@@ -42,9 +44,15 @@ header{
     display: flex;
     gap: 20px;
 }
+ .hamburgermenu i{
+    display: none;
+    color: #1E0E62;
+    font-size: 24px;
+}
 .menu-icons i{
     color: #1E0E62;
     font-size: 24px;
+
 }
 .search{
     display: flex;
@@ -130,4 +138,28 @@ main{
     color: #15143966;
     line-height: 20px;
     font-size: 14px;
+}
+
+@media(max-width:932px) {
+   
+   main{
+    flex-direction: column;
+    padding: 15px;
+   }
+   .first-part{
+    flex-direction: column;
+    padding: 15px;
+   }
+   .second-part{
+    padding: 15px;
+   }
+   header{
+    padding: 14px;
+   }
+   .menu-icons,.menu-items{
+    display: none;
+   }
+   .hamburgermenu i{
+    display: block;
+   }
 }
